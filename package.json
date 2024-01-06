@@ -7,7 +7,7 @@
   "twitter": "tim_scanlin",
   "scripts": {
     "start": "node server.js",
-    "build": "next build",
+    "build": "next --openssl-legacy-provider build",
     "build:content": "processmd content/**/*.md --outputDir content --preview 110 --highlightCode --summaryOutput content/summary.json",
     "build:content:watch": "processmd content/**/*.md --outputDir content --preview 110 --highlightCode --summaryOutput content/summary.json --watch",
     "build:export": "npm run build && npm run export",
